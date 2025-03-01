@@ -96,7 +96,7 @@ async function startScan() {
     console.log("📤 Gửi request quét email:", payload);
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/scan-email', {
+        const response = await fetch('https://get-otp-uxz9.onrender.com/scan-email', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
