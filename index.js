@@ -33,7 +33,7 @@ async function checkEmail() {
 }
 async function startScan() {
     try {
-        const response = await fetch('https://backend-xpgo.onrender.com/scan-email', {
+        const response = await fetch('https://backend-1-lhoq.onrender.com/scan-email', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({})
