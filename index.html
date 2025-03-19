@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiểm tra tài khoản</title>
+    <title>Xác nhận Email</title>
     <script type="module" src="index.js"></script>
     <style>
         body {
@@ -38,7 +38,7 @@
             margin: 10px 0 5px;
         }
 
-        input, select {
+        input {
             width: calc(100% - 10px);
             padding: 10px;
             border: 1px solid #ddd;
@@ -61,11 +61,6 @@
             background-color: #0056b3;
         }
 
-        #scan-message {
-            color: #d9534f;
-            font-weight: bold;
-        }
-
         #email-container {
             margin-top: 20px;
             background: #f9f9f9;
@@ -75,49 +70,16 @@
             overflow: auto;
             max-height: 300px;
         }
-
-        .hidden {
-            display: none;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🔍 Kiểm tra tài khoản</h1>
-
-        <label>📱 Nhập số điện thoại:</label>
-        <input type="text" id="phone" placeholder="VD: 0987654321">
-        <button onclick="checkPhone()">Xác nhận số điện thoại</button>
-
-        <div id="email-section" class="hidden">
-            <label>✉️ Nhập email:</label>
-            <input type="text" id="email" placeholder="VD: email@example.com">
-            <button onclick="checkEmail()">Xác nhận email</button>
-        </div>
-        
-        <div id="device-section" class="hidden">
-            <label>🖥️ Chọn thiết bị kết nối:</label>
-            <select id="device">
-                <option value="mobile">Điện thoại</option>
-                <option value="laptop">Laptop</option>
-                <option value="tablet">Tablet</option>
-                <option value="tv">TV Gia đình</option>
-            </select>
-            <button onclick="confirmDevice()">Xác nhận thiết bị</button>
-        </div>
-
-        <div id="username-section" class="hidden">
-            <label>👤 Nhập tên người dùng:</label>
-            <input type="text" id="username" placeholder="Tên người dùng Netflix">
-            <button onclick="confirmUser()">Xác nhận người dùng</button>
-        </div>
-        
-        <div id="scan-section" class="hidden">
-            <p id="scan-message"></p>
-            <button onclick="startScan()">🚀 Bắt đầu quét email</button>
-        </div>
-
+        <h1>✉️ Xác nhận Email</h1>
+        <label>Nhập email của bạn:</label>
+        <input type="text" id="email" placeholder="VD: email@example.com">
+        <button onclick="checkEmail()">Xác nhận Email</button>
         <div id="email-container"></div>
     </div>
 </body>
 </html>
+    
